@@ -18,9 +18,13 @@ null_ls.setup {
     null_ls.builtins.diagnostics.eslint_d.with({
       diagnostics_format = '[eslint] #{m}\n(#{c})'
     }),
-    null_ls.builtins.diagnostics.fish
+    null_ls.builtins.diagnostics.fish,
+    null_ls.builtins.formatting.rustfmt,
+    null_ls.builtins.formatting.goimports,
+    null_ls.builtins.formatting.black,
   },
   on_attach = function(client, bufnr)
+    print('format')
     if client.supports_method("textDocument/formatting") then
       vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
       vim.api.nvim_create_autocmd("BufWritePre", {

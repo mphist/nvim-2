@@ -26,6 +26,9 @@ keymap.set('', 'sh', '<C-w>h')
 keymap.set('', 'sk', '<C-w>k')
 keymap.set('', 'sj', '<C-w>j')
 keymap.set('', 'sl', '<C-w>l')
+-- Switch split view
+keymap.set('', 'sH', '<C-w>t<C-w>K')
+keymap.set('', 'sV', '<C-w>t<C-w>H')
 
 -- Resize window
 keymap.set('n', '<C-w><left>', '<C-w><')
