@@ -23,7 +23,7 @@ lspkind.init({
     Function = "ƒ",
     Constructor = "",
     Field = "󰿦",
-    Variable = "",
+    Variable = "α",
     Class = "󰒪",
     Interface = "",
     Module = "",
